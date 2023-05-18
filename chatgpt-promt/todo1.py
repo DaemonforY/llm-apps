@@ -1,10 +1,8 @@
-
-
-
 import openai
 import os
 
 openai.api_key = os.environ.get("OPENAI_API_KEY")
+
 
 class Conversation:
     def __init__(self, prompt, num_of_round):
@@ -30,7 +28,7 @@ class Conversation:
         message = response["choices"][0]["message"]["content"]
         self.messages.append({"role": "assistant", "content": message})
 
-        if len(self.messages) > self.num_of_round*2 + 1:
+        if len(self.messages) > self.num_of_round * 2 + 1:
             del self.messages[1:3]
         return message
 
