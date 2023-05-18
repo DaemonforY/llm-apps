@@ -5,3 +5,4 @@
 /.idea/vcs.xml
 /small-apps/.DS_Store
 /.idea/inspectionProfiles
+/langchain-search/__pycache__/app.cpython-310.pyc
