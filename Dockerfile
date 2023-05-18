@@ -6,3 +6,4 @@ COPY . /app
 RUN pip install --no-cache --upgrade pip && \
     pip install --no-cache pymysql langchain openai
 
+
